@@ -1,4 +1,9 @@
- 
+<div id="back"></div>
+<div class="center" ></div> 
+<body>
+<div class="star-1 stars"></div>
+<div class="star-2 stars"></div>
+<div class="star-3 stars"></div>
 
 <style>
   .stars {
@@ -10,22 +15,25 @@
   }
 
   .star-1 {
-    margin-top: 15%;
-    margin-left: 60%;
+    position: relative;
+    top: 150px;
+    left: 160px;
     animation-duration: 1s;
     animation-name: twinkle;
   }
 
   .star-2 {
-    margin-top: 25%;
-    margin-left: 25%;
+position: relative;
+    top: 150px;
+    left: 700px;
     animation-duration: 0.9s;
     animation-name: twinkle;
   }
 
   .star-3 {
-    margin-top: 10%;
-    margin-left: 50%;
+position: relative;
+    top: 150px;
+    left: 900px;
     animation-duration: 1.1s;
     animation-name: twinkle;
   }
@@ -39,15 +47,57 @@
 
   #back {
     position: fixed;
-    padding: 0;
+ /*   padding: 0;
     margin: 0;
     top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
+    left: 0;*/
+    width: 100%;
+    height: 44%;
     background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
   }
 </style>
+<style>
+
+  .balls {
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc,
+       #EDF1FF
+    );
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #ball1 {
+    left:27%;
+    animation-timing-function :linear;
+
+  }
+  #ball2 {
+    left:56%;
+animation-timing-function :ease-out;
+
+  }
+
+  @keyframes bounce {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 249px;
+    }
+  }
+
+</style>
+
+<div class="balls" id="ball1"></div>
+<div class="balls" id="ball2"></div>
 <div id="flex">
     <style>
   .penguin {
@@ -447,10 +497,6 @@
   
 
 <div id="back"></div>
-<div class="star-1 stars"></div>
-<div class="star-2 stars"></div>
-<div class="star-3 stars"></div>
-<div class="center"></div> 
 
 <style>
   .balls {
@@ -485,9 +531,10 @@
     }
   }
 </style>
-<div class="balls" id="red"></div>
-<div class="balls" id="blue"></div>
-<div class="balls" id="green"></div>
+
+<!-- <div class="balls" id="ball1"></div>
+<div class="balls" id="ball1"></div>
+<div class="balls" id="ball1"></div> -->
 <style>
     #flex
     {
@@ -507,7 +554,7 @@
     height: 100px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 25px 10px 0px 0px blue;
+    box-shadow: 25px 10px 0px 0px white;
   }
 
 </style>
@@ -579,4 +626,10 @@
     }
   }
 
+</style>
+</body>
+<style >
+  body{
+    background-color: #87CEEB ;
+  }
 </style>
